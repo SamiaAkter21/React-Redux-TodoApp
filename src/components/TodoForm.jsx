@@ -49,6 +49,8 @@ const TodoForm = ({ onSaveTodo }) => {
         <DialogTitle id="form-dialog-title">New Todo</DialogTitle>
         <DialogContent>
           <TextField
+            style={{ marginBottom: "1rem" }}
+            variant="outlined"
             autoFocus
             margin="dense"
             id="title"
@@ -59,6 +61,7 @@ const TodoForm = ({ onSaveTodo }) => {
             onChange={(e) => setTodo({ ...todo, title: e.target.value })}
           />
           <TextField
+            variant="outlined"
             margin="dense"
             id="description"
             label="Description"
