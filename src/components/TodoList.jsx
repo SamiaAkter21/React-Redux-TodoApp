@@ -8,7 +8,7 @@ const TodoList = ({ todos, onDeleteTodo }) => {
     <Grid container spacing={2}>
       {todos.map((todo) => (
         <Grid item key={todo.id} xs>
-          <TodoCard todo={todo} onDeleteTodo={onDeleteTodo} />
+          <TodoCard todo= {todo} onDeleteTodo={onDeleteTodo} />
         </Grid>
       ))}
     </Grid>
